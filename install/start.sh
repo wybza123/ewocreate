@@ -73,9 +73,9 @@ down_rpm(){
     fi
     
     if [ "$en" != "en" ] ; then 
-        wget -c -t 20 -T 180 http://npm.ewomail.com/$filename
+        wget -c -t 20 -T 180 https://github.com/wybza123/ewonpm/raw/master/$filename
     else
-        wget -c -t 20 -T 180 http://download.ewomail.org:8282/$filename
+        wget -c -t 20 -T 180 https://github.com/wybza123/ewonpm/raw/master/$filename
     fi
     
     if [ ! -f $filename ]; then
